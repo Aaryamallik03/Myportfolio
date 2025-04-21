@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  body.dark-mode {
+    background-color: #121212;
+    color: #f4f4f4;
+  }
+  
+  .container {
+    width: 85%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px 0;
+  }
+  
+  header {
+    background-color: #4caf50;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  body.dark-mode header {
+    background-color: #2b2b2b;
+  }
+  
+  .header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .profile-pic {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    margin-right: 20px;
+  }
+  
+  h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+  }
+  
+  .highlight {
+    color: #fffacd;
+    font-weight: bold;
+  }
+  
+  h2 {
+    margin-top: 30px;
+    font-size: 26px;
+    color: #4caf50;
+  }
+  
+  p {
+    margin: 10px 0;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  ul li {
+    background-color: #fff;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  ul li:hover {
+    background-color: #f9f9f9;
+  }
+  
+  body.dark-mode ul li {
+    background-color: #1e1e1e;
+  }
+  
+  ul li h3 {
+    font-size: 20px;
+    color: #4caf50;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  body.dark-mode input,
+  body.dark-mode textarea {
+    background-color: #1d1d1d;
+    color: #fff;
+    border-color: #555;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  #toggle-dark {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    margin-left: auto;
+    padding: 10px;
+  }
+  
+  body.dark-mode #toggle-dark {
+    color: #ffde59;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+  }
+  
